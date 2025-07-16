@@ -35,3 +35,30 @@ A modern React application fully integrated with Firebase services (Authenticati
 ```bash
 git clone https://github.com/Gajender-Singh-07/Firebase-React.git
 cd Firebase-React
+```
+
+2. Install Dependencies
+``` 
+npm install
+```
+3. Add Firebase Config
+```
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+
+export default firebaseConfig;
+```
+
+Authentication Flow
+Signup users via email/password
+Login and maintain user session with Firebase Auth
+ProtectedRoute checks user from context—redirects unauthenticated users
+Users access Dashboard where they can interact with Firestore (add/update/delete data)
+
+
